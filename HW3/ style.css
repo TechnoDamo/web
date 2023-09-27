@@ -35,6 +35,8 @@
             .name
             {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 font-size:75px;
                 height: 25px;
                 margin-top: -120px;
@@ -101,6 +103,7 @@
                 }
                 nav {
                     display: flex;
+                    justify-content: center;
                     flex-direction: row;
                 }
             .menu
