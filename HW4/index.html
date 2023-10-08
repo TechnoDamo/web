@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang = "ru">
-    <meta charset="UTF-8">
     <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Homework 4</title>
-        <link rel="stylesheet" href="../HW3/ style.css">
+        <link rel="stylesheet" href="../HW4/style.css">
     </head>
-    <body>
-        <header>
-            <img src = "./logo.png" class="logo" alt = "logo">
+    <body class = bg-gray>
+        <header class="container">
+            <div class="row">
+                <div class="col-xs-1 col-sm-2 col-lg-3">
+                  <img src="./logo.png" class="img-fluid" alt="logo">
+                </div>
+              </div>
+              
             <h1 class = "name">Project 4</h1>
             <div class="menu">
-                <nav class = "Navigation">
-                        <a href="/"><button type="button" class="custom-button">ГЛАВНАЯ</button></a>
-                        <a href="/about"><button type="button" class="custom-button">О НАС</button></a>
-                        <a href="/contacts"><button type="button" class="custom-button">КОНТАКТЫ</button></a>
+                <nav>
+                        <button type="button" class="custom-button">ГЛАВНАЯ</button>
+                        <button type="button" class="custom-button">О НАС</button>
+                        <button type="button" class="custom-button">КОНТАКТЫ</button>
                 </nav>
             </div>
             
         </header>
-        <div class="container">
-            <div class="item2">
+        <div class="row container">
+            <div class="row order-lg-2"> 
+                <table class="table table-hover table-bordered">
+                    <tr><th>Заголовок 1</th><th>Заголовок 2</th><th>Заголовок 3</th></tr>
+                    <tr><td>Заголовок 1</td><td>Заголовок 2</td><td>Заголовок 3</td></tr>
+                    <tr><td>Заголовок 1</td><td>Заголовок 2</td><td>Заголовок 3</td></tr>
+                </table>
+                <br/> 
+                <br/> 
+                <br/> 
+                </div>
+            <div class="row order-lg-1">
         <ul>
             <li><a href = "http://www.kubsu.ru/">1. КубГУ</a></li>
             <li><a href = "https://www.kubsu.ru/">2. КубГУ</a></li>
@@ -73,17 +91,7 @@
             <br/> 
             <br/>
             </div>
-            <div class="item1 all"> 
-            <table class="center">
-                <tr><th>Заголовок 1</th><th>Заголовок 2</th><th>Заголовок 3</th></tr>
-                <tr><td>Заголовок 1</td><td>Заголовок 2</td><td>Заголовок 3</td></tr>
-                <tr><td>Заголовок 1</td><td>Заголовок 2</td><td>Заголовок 3</td></tr>
-            </table>
-            <br/> 
-            <br/> 
-            <br/> 
-            </div>
-            <div class="item3 all">
+            <div class="row order-lg-3">
             <form>
                 <label for="fio">ФИО:</label>
                 <input type="text" id="fio" name="fio" required>
