@@ -10,14 +10,16 @@
   <header>
     <h1>Caculator</h1>
   </header>
-
-  <nav>
-    <!-- Your navigation menu goes here -->
-  </nav>
-
-  <main>
-    <!-- Your main content goes here -->
-  </main>
+  <div class="container">
+    <input type="number" id="quantity" placeholder="Введите количество товара">
+    <select id="product">
+      <option value="10">Товар 1</option>
+      <option value="20">Товар 2</option>
+      <option value="30">Товар 3</option>
+    </select>
+    <button onclick="calculate()">Посчитать стоимость</button>
+    <h3 id="result"></h3>
+  </div>
 
   <footer>
     Koblev D.
