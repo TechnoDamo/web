@@ -1,6 +1,6 @@
 function calculate() {
-    const quantity = parseFloat(document.getElementById("quantity").value);
-    const product = parseFloat(document.getElementById("product").value);
-    const totalCost = quantity * product;
-    document.getElementById("result").innerHTML = `Стоимость заказа: ${totalCost}`;
+    var quantity = parseFloat(document.getElementById("quantity").value);
+    var product = parseFloat(document.getElementById("product").value);
+    var totalCost = quantity * product;
+    document.getElementById("result").innerHTML = totalCost;
   }
