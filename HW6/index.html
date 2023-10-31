@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="rus">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 5</title>
-</head>
-<body>
-  <header>
-    <h1>Caculator</h1>
-  </header>
-  <div class="container">
-    <input type="number" id="quantity" placeholder="Введите количество товара">
-    <select id="product">
-      <option value="10">Лук: 10р/кг</option>
-      <option value="20">Товар 20р/кг</option>
-      <option value="30">Товар 30р/кг</option>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator">
+    <title>Plain HTML site using GitLab Pages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js"></script>
+  </head>
+  <body>
+  <p>Выберите тип товара</p>
+  Тип товара:
+  <form>
+    <select name="prodType">
+      <option value="1">Product 1</option>
+      <option value="2">Product 2</option>
+      <option value="3">Product 3</option>
     </select>
-    <button onclick="calculate()">Посчитать стоимость</button>
-    <h3 id="result"></h3>
-  </div>
+    <div id="radios">
+      <label><input type="radio" name="prodOptions" value="option1"> Опция 1</label>
+      <label><input type="radio" name="prodOptions" value="option2"> Опция 2</label>
+      <label><input type="radio" name="prodOptions" value="option3"> Опция 3</label>
+    </div>
+    <div id="checkboxes">
+      <label><input type="checkbox" name="prop1"> Свойство 1</label>
+      <label><input type="checkbox" name="prop2"> Свойство 2</label>
+    </div>
+  </form>
+  <div id="prodPrice"></div>
+  <div class="container"><input type="number" id="quantity" placeholder="Введите количество товара"></div>
+  <button onclick="calculate()">Посчитать стоимость</button>
+  <p id="result"></p>
 
-  <footer>
-    Koblev D.
-  </footer>
-
-  <script src="/web/HW6/calc.js"></script> 
-</body>
+  </body>
 </html>
+
