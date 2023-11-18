@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Галерея</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <button id = "someId">Открыть форму</button>
+
+<div id="popUp" style="display: none;">
+  <form id="feedbackForm">
+    <label for="fullName">ФИО:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="organization">Организация:</label>
+    <input type="text" id="organization" name="organization">
+
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <label for="agree">Согласие с политикой обработки персональных данных:</label>
+    <input type="checkbox" id="agree" name="agree" required>
+
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+  </body>
+</html>
