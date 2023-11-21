@@ -79,7 +79,7 @@ $(document).ready(function () {
         formData.append("message", messageInput.value);
         formData.append("agree", agreeCheckbox.checked);
     
-        fetch("https://formcarry.com/s/hOd4opxWKz", {
+        fetch("https://formcarry.com/s/1KJSc78bDf", {
           body: formData,
           headers: {
             "Accept": "application/json",
